@@ -1,12 +1,32 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(147, 146, 146);
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+.textarea,.preview{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:1rem;
+    width:50%;
+    height: 100%;
+    color: black;
+    border: none;
+}
+.textarea{
+    padding-top: 10px;    
+    background-color: rgb(235, 240, 239);
+    font-weight: 600;
+    font-size: 18px;
+}
+.preview{
+    background-color: rgb(227, 231, 230);
+    font-size: 25px;
+    font-weight: 700;
 }
