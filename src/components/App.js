@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 const App = () => {
   const [markdown,setMarkdown]=useState('');
   const [html, setHtml] = useState('');
-  const [loading, setLoading] = useState(false);  
+  const [loading, setLoading] = useState(false);
+  
 
   const handletext = (e) =>{
     setLoading(true);
@@ -20,12 +21,12 @@ const App = () => {
   },[markdown]);
 
   return (
-  <div className='app'>
-      <textarea className='textarea' onChange={handletext}> 
+  <div className="app">
+      <textarea className="textarea" onChange={handletext}> 
       </textarea>
       
       {loading ? 
-        ( <p className='loading'>loading...</p> )
+        ( <p className="loading">loading...</p> )
         :
         (<div className="preview">
           { html }
